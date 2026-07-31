@@ -1008,15 +1008,15 @@ nav ul li a,
     font-size:14px;
 }
 
-@media (max-width:600px){
+
+@media screen and (max-width: 992px){
 
     .project-container{
-
-        grid-template-columns:1fr;
-
-        gap:25px;
-
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 20px;
     }
 
 }
+
 }
