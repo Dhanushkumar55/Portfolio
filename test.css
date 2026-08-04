@@ -1012,9 +1012,6 @@ nav ul li a,
 @media screen and (max-width: 992px){
 
     .project-container{
-        margin:0 auto;
-        padding:0;
-        max-width:100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         padding: 0 20px;
