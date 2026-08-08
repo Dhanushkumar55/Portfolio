@@ -1053,139 +1053,94 @@ nav ul li a,
 }
 
 /* =========================================
-   MOBILE PROJECT FIX
+   MOBILE NAVBAR - FINAL FIX
 ========================================= */
 
 @media screen and (max-width: 768px) {
 
-    .portfolio {
+    /* Navbar */
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+
         width: 100%;
-        padding: 60px 15px;
+        height: 70px;
+
+        padding: 0 8px;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        background: #101010;
+
+        z-index: 1000;
+
         overflow: hidden;
     }
 
-    .portfolio-title {
+    /* Hide logo on mobile */
+    nav .logo {
+        display: none;
+    }
+
+    /* Navigation list */
+    nav ul {
         width: 100%;
-        padding: 0 10px;
-    }
-
-    .portfolio-title h2 {
-        font-size: 32px;
-    }
-
-    .portfolio-title p {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-
-    /* ONE PROJECT PER ROW */
-    .project-container {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 40px auto 0;
-
-        padding: 0;
-
-        display: grid;
-
-        grid-template-columns: 1fr !important;
-
-        gap: 25px;
-    }
-
-
-    /* PROJECT CARD */
-
-    .project-card {
-        width: 100%;
-        min-width: 0;
-        max-width: 100%;
-
-        min-height: auto;
-
-        padding: 30px 22px;
-
-        border-radius: 22px;
-    }
-
-
-    /* NUMBER */
-
-    .project-number {
-        width: 58px;
-        height: 58px;
-
-        font-size: 21px;
-
-        margin-bottom: 25px;
-    }
-
-
-    /* TITLE */
-
-    .project-card h3 {
-        font-size: 27px;
-
-        line-height: 1.3;
-
-        text-align: center;
-
-        margin-bottom: 20px;
-    }
-
-
-    /* DESCRIPTION */
-
-    .project-card p {
-        font-size: 16px;
-
-        line-height: 1.7;
-
-        text-align: center;
-    }
-
-
-    /* TECHNOLOGIES */
-
-    .tech {
-        justify-content: center;
-
-        margin-top: 20px;
-
-        gap: 8px;
-    }
-
-    .tech span {
-        padding: 9px 18px;
-
-        font-size: 14px;
-    }
-
-
-    /* BUTTONS */
-
-    .project-buttons {
-        width: 100%;
+        height: 100%;
 
         display: flex;
 
         flex-direction: row;
 
-        gap: 12px;
+        justify-content: space-between;
+        align-items: center;
 
-        margin-top: 30px;
+        gap: 0;
+
+        margin: 0;
+        padding: 0;
     }
 
-    .project-buttons a {
-        width: 50%;
+    /* Navigation items */
+    nav ul li {
+        flex: 1;
 
-        padding: 13px 8px;
+        display: flex;
 
-        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 0;
+    }
+
+    /* Navigation links */
+    nav ul li a {
+        display: block;
+
+        width: 100%;
+
+        text-align: center;
+
+        font-size: 14px;
+
+        font-weight: 500;
+
+        white-space: nowrap;
+
+        padding: 10px 2px;
+
+        color: #fff;
+
+        transition: 0.3s;
+    }
+
+    /* Hover */
+    nav ul li a:hover {
+        color: #00c8ff;
     }
 }
-    
-
 }
